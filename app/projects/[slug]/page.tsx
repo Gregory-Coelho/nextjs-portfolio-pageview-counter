@@ -17,13 +17,13 @@ export async function generateStaticParams(): Promise<Props["params"][]> {
   return allProjects
     .filter((p) => p.published)
     .map((p) => ({
-      slug: p.slug,
+      slug: p?.slug,
     }));
 }
 
 export default async function PostPage({ params }: Props) {
-  const slug = params?.slug;
-  const project = allProjects.find((project) => project.slug === slug);
+  const slug = params??.slug;
+  const project = allProjects.find((project) => project?.slug === slug);
 
   if (!project) {
     notFound();

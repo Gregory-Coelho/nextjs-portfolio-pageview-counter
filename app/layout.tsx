@@ -3,21 +3,19 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import { NAME } from "./lib/constants";
 
 export const metadata: Metadata = {
-  title: {
-    default: "gregory-lepine",
-    template: "%s | gregory-lepine",
-  },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  title: `${NAME} - Web Developer`,
+  description: "My website with my projects, skills and contact",
   openGraph: {
     title: "gregory-lepine",
-    description: "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://gregory-lepine",
+    description: "My website with my projects, skills and contact",
+    url: "TODO",
     siteName: "gregory-lepine",
     images: [
       {
-        url: "https://gregory-lepine/og.png",
+        url: "https://i.pinimg.com/originals/75/2f/75/752f7518937af924a58eed69ecc4e5a7.jpg",
         width: 1920,
         height: 1080,
       },
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Grégory Lépine",
     card: "summary_large_image",
   },
   icons: {
