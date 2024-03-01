@@ -37,11 +37,7 @@ export default function Home() {
         <p className="text-sm text-zinc-500 p-4 md:w-[500px]">
           Passionate about art and fascinated by astronomy, two years ago I
           undertook a professional reconversion towards frontend development.
-          Driven by curiosity and boundless creativity, I am constantly looking
-          for new knowledge and ways to progress. Currently, I am actively
-          seeking employment opportunities in the field. Join me in this
-          adventure where we explore together the infinite horizons of the web
-          and creativity!
+          Driven by curiosity and boundless creativity.
         </p>
       </div>
     </div>

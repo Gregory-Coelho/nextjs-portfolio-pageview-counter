@@ -1,5 +1,5 @@
-// types/mdx.d.ts
-declare module "*.mdx" {
-	let MDXComponent: (props) => JSX.Element;
-	export default MDXComponent;
+// types/md.d.ts
+declare module "*.md" {
+  let mdComponent: (props) => JSX.Element;
+  export default mdComponent;
 }

@@ -1,16 +1,10 @@
 "use client";
-import { Github, Linkedin, Mail, Twitter, X } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
-  // {
-  //   icon: <X size={20} />,
-  //   href: "https://twitter.com/GregoryCoelho8",
-  //   label: "X",
-  //   handle: "@GregoryCoelho8",
-  // },
   {
     icon: <Mail size={20} />,
     href: "gregory.lepine21@gmail.com",
