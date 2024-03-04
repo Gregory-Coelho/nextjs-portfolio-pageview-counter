@@ -1,9 +1,9 @@
-import { Project } from "../interfaces/project";
+import { Project } from "@/types/project";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-// crée un chemin vers le répertoire posts
+// crée un chemin vers le répertoire projects
 const projectDirectory = join(process.cwd(), "_projects");
 
 // lit le contenu du répertoire des articles et renvoi une liste de slugs
@@ -13,7 +13,7 @@ export const getProjectSlugs = () => {
 
 // prend un slug en paramètre et récup le contenu de l'article
 // créer un chemin vers le fichier Markdown en utilisant le slug
-// lit le contenu du fichier avec fs.readFileSync (que je comprend pas)
+// lit le contenu du fichier avec fs.readFileSync
 // Le contenu du fichier est ensuite analysé avec matter pour extraire les métadonnées et le contenu de l'article.
 
 export const getPostBySlug = (slug: string) => {
@@ -27,11 +27,8 @@ export const getPostBySlug = (slug: string) => {
 
 // Recup tout les slugs grace a getPostSlugs.
 // map les slugs, et pour chaque slugs elle récupère le contenu de l'article
-// ensuite trie les articles par date
 export const getAllProjects = (): Project[] => {
   const slugs = getProjectSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  const posts = slugs.map((slug) => getPostBySlug(slug));
   return posts;
 };
