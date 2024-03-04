@@ -2,48 +2,57 @@
 import Link from "next/link";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
+import {
+  CSSSKILLS,
+  CYPRESS,
+  GITHUB,
+  JEST,
+  REACT,
+  TAILWIND,
+  TYPESCRIPT,
+} from "../lib/constants";
 
 const skills = [
   {
     icon: <img src="/assets/skills/react.png" />,
     key: "React",
-    href: "",
+    href: { REACT },
     label: "React",
   },
   {
     icon: <img src="/assets/skills/typescript.png" />,
     key: "TypeScript",
-    href: "",
+    href: { TYPESCRIPT },
     label: "TypeScript",
   },
   {
     icon: <img src="/assets/skills/tailwind-css.png" />,
     key: "Tailwind",
-    href: "",
+    href: { TAILWIND },
     label: "Tailwind",
   },
   {
     icon: <img src="/assets/skills/jest.png" />,
     key: "Jest",
-    href: "",
+    href: { JEST },
     label: "Jest",
   },
   {
     icon: <img src="/assets/skills/letter-c.png" />,
     key: "Cypress",
-    href: "",
+    href: { CYPRESS },
     label: "Cypress",
   },
   {
     icon: <img src="/assets/skills/github.png" />,
     key: "Github",
-    href: "",
+    href: { GITHUB },
     label: "Github",
   },
   {
     icon: <img src="/assets/skills/css.png" />,
     key: "CSS",
-    href: "",
+    href: { CSSSKILLS },
     label: "CSS",
   },
 ];
