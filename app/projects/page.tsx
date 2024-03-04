@@ -28,13 +28,13 @@ export default async function ProjectsPage() {
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           {allProjects.map((project) => {
             return (
-              <Card>
-                <img
+              <Card key={project.key}>
+                {/* <img
                   src={project.image}
-                  className="w-full bg-opacity-50 shadow-lg h-32"
-                />
+                  className="bg-cover bg-opacity-50 bg shadow-lg h-32 "
+                /> */}
                 <Link href={project.url}>
-                  <article className="relative w-full h-full p-4 md:p-8">
+                  {/* <article className="relative w-full h-full p-4 md:p-8">
                     <h2
                       id="featured-post"
                       className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
@@ -44,7 +44,22 @@ export default async function ProjectsPage() {
                     <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                       {project.description}
                     </p>
-                  </article>
+                  </article> */}
+                  <div className="block relative w-full h-full min-h-[300px]">
+                    <div
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{ backgroundImage: `url(${project.image})` }}
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity group-hover:bg-opacity-50" />
+                    <div className="relative z-10 p-4 md:p-8">
+                      <h2 className="text-3xl font-bold text-white group-hover:text-zinc-100 sm:text-4xl font-display">
+                        {project.title}
+                      </h2>
+                      <p className="mt-4 leading-8 duration-150 text-white group-hover:text-zinc-300">
+                        {project.description}
+                      </p>
+                    </div>
+                  </div>
                 </Link>
               </Card>
             );
