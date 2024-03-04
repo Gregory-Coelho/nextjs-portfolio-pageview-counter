@@ -9,14 +9,14 @@ const socials = [
     icon: <Mail size={20} />,
     href: "mailto:gregory.lepine21@gmail.com",
     label: "Email",
-    handle: "@",
+    handle: "gregory.lepine21\n@gmail.com",
     key: "email",
   },
   {
     icon: <Github size={20} />,
     href: "https://github.com/Gregory-Coelho",
     label: "Github",
-    handle: "Grégory",
+    handle: "Gregory-Coelho",
     key: "gitHub",
   },
   {
@@ -47,9 +47,9 @@ export default function Example() {
                 />
                 <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
                   {s.icon}
-                </span>{" "}
-                <div className="z-10 flex flex-col items-center">
-                  <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+                </span>
+                <div className="z-10 flex flex-col items-center ">
+                  <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display text-center ">
                     {s.handle}
                   </span>
                   <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
