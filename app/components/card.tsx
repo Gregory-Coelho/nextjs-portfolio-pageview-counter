@@ -13,7 +13,7 @@ export const Card: React.FC<PropsWithChildren> = ({ children }) => {
   }
   const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
   const style = { maskImage, WebkitMaskImage: maskImage };
-
+  console.log("coucou");
   return (
     <div
       onMouseMove={onMouseMove}

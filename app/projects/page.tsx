@@ -10,6 +10,9 @@ const allProjects = getAllProjects();
 console.log({ coucou: allProjects });
 
 export default async function ProjectsPage() {
+  if (!allProjects) {
+    return <div>loading...</div>;
+  }
   return (
     <div className="relative pb-16">
       <Navigation />
