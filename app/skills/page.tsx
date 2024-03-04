@@ -5,46 +5,46 @@ import { Navigation } from "../components/nav";
 
 const skills = [
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/react.png" />,
+    key: "React",
     href: "",
-    label: "Hello",
+    label: "React",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/typescript.png" />,
+    key: "TypeScript",
     href: "",
-    label: "Hello",
+    label: "TypeScript",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/tailwind-css.png" />,
+    key: "Tailwind",
     href: "",
-    label: "Hello",
+    label: "Tailwind",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/jest.png" />,
+    key: "Jest",
     href: "",
-    label: "Hello",
+    label: "Jest",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/letter-c.png" />,
+    key: "Cypress",
     href: "",
-    label: "Hello",
+    label: "Cypress",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/github.png" />,
+    key: "Github",
     href: "",
-    label: "Hello",
+    label: "Github",
   },
   {
-    icon: <img src="" />,
-    key: "Hello",
+    icon: <img src="/assets/skills/css.png" />,
+    key: "CSS",
     href: "",
-    label: "Hello",
+    label: "CSS",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function SkillsPage() {
                   href={s.href}
                   className="flex p-2 items-center content-between gap-4"
                 >
-                  <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
+                  <span className="bg-white relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500  group-hover:border-zinc-200 drop-shadow-orange">
                     {s.icon}
                   </span>
                   <h3 className="text-white"> {s.label}</h3>

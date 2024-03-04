@@ -29,22 +29,7 @@ export default async function ProjectsPage() {
           {allProjects.map((project) => {
             return (
               <Card key={project.key}>
-                {/* <img
-                  src={project.image}
-                  className="bg-cover bg-opacity-50 bg shadow-lg h-32 "
-                /> */}
                 <Link href={project.url}>
-                  {/* <article className="relative w-full h-full p-4 md:p-8">
-                    <h2
-                      id="featured-post"
-                      className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                    >
-                      {project.title}
-                    </h2>
-                    <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                      {project.description}
-                    </p>
-                  </article> */}
                   <div className="block relative w-full h-full min-h-[300px]">
                     <div
                       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
