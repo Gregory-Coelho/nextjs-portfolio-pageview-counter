@@ -16,43 +16,43 @@ const skills = [
   {
     icon: <img src="/assets/skills/react.png" />,
     key: "React",
-    href: { REACT },
+    href: REACT,
     label: "React",
   },
   {
     icon: <img src="/assets/skills/typescript.png" />,
     key: "TypeScript",
-    href: { TYPESCRIPT },
+    href: TYPESCRIPT,
     label: "TypeScript",
   },
   {
     icon: <img src="/assets/skills/tailwind-css.png" />,
     key: "Tailwind",
-    href: { TAILWIND },
+    href: TAILWIND,
     label: "Tailwind",
   },
   {
     icon: <img src="/assets/skills/jest.png" />,
     key: "Jest",
-    href: { JEST },
+    href: JEST,
     label: "Jest",
   },
   {
     icon: <img src="/assets/skills/letter-c.png" />,
     key: "Cypress",
-    href: { CYPRESS },
+    href: CYPRESS,
     label: "Cypress",
   },
   {
     icon: <img src="/assets/skills/github.png" />,
     key: "Github",
-    href: { GITHUB },
+    href: GITHUB,
     label: "Github",
   },
   {
     icon: <img src="/assets/skills/css.png" />,
     key: "CSS",
-    href: { CSSSKILLS },
+    href: CSSSKILLS,
     label: "CSS",
   },
 ];
@@ -62,7 +62,7 @@ export default function SkillsPage() {
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
 
-      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto p-16">
         <div className="flex flex-col justify-between mt-16 ">
           <h2 className="text-3xl m-4 font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Skills
@@ -72,7 +72,7 @@ export default function SkillsPage() {
               <Card key={s.key}>
                 <Link
                   href={s.href}
-                  className="flex p-2 items-center content-between gap-4"
+                  className="flex p-4 items-center  gap-16 text-center w-64 mx-4 "
                 >
                   <span className="bg-white relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500  group-hover:border-zinc-200 drop-shadow-orange">
                     {s.icon}
