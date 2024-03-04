@@ -31,7 +31,7 @@ export default async function ProjectsPage() {
               <Card>
                 <img
                   src={project.image}
-                  className=" bg-white bg-opacity-50 p-8 shadow-lg h-32"
+                  className="w-full bg-opacity-50 shadow-lg h-32"
                 />
                 <Link href={project.url}>
                   <article className="relative w-full h-full p-4 md:p-8">

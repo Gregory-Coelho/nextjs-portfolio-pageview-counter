@@ -10,18 +10,21 @@ const socials = [
     href: "mailto:gregory.lepine21@gmail.com",
     label: "Email",
     handle: "@",
+    key: "email",
   },
   {
     icon: <Github size={20} />,
     href: "https://github.com/Gregory-Coelho",
     label: "Github",
     handle: "Grégory",
+    key: "gitHub",
   },
   {
     icon: <Linkedin size={20} />,
     href: "https://www.linkedin.com/in/gregory-coelho/",
     label: "LinkedIn",
     handle: "Gregory-Coelho",
+    key: "LinkedIn",
   },
 ];
 
@@ -32,7 +35,7 @@ export default function Example() {
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
-            <Card>
+            <Card key={s.key}>
               <Link
                 href={s.href}
                 target="_blank"

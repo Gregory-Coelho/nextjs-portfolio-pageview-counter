@@ -1,6 +1,6 @@
-import { motion, useMotionTemplate, useSpring } from "framer-motion";
-
+"use client";
 import { PropsWithChildren } from "react";
+import { motion, useMotionTemplate, useSpring } from "framer-motion";
 
 export const Card: React.FC<PropsWithChildren> = ({ children }) => {
   const mouseX = useSpring(0, { stiffness: 500, damping: 100 });
@@ -13,7 +13,7 @@ export const Card: React.FC<PropsWithChildren> = ({ children }) => {
   }
   const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
   const style = { maskImage, WebkitMaskImage: maskImage };
-  console.log("coucou");
+
   return (
     <div
       onMouseMove={onMouseMove}
