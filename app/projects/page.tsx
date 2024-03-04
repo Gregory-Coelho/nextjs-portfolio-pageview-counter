@@ -7,7 +7,7 @@ import { getAllProjects } from "../lib/api";
 
 const allProjects = getAllProjects();
 
-console.log({ allProjects });
+console.log({ coucou: allProjects });
 
 export default async function ProjectsPage() {
   return (
