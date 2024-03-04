@@ -54,7 +54,7 @@ export default function SkillsPage() {
       <Navigation />
 
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col justify-between mt-16 ">
           <h2 className="text-3xl m-4 font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Skills
           </h2>
