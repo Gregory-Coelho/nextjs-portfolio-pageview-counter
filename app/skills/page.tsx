@@ -64,7 +64,7 @@ const skills = [
     icon: <img src="/assets/skills/apollo.svg" />,
     key: "Apollo",
     href: APOLLO,
-    label: "Apollo GraphQL",
+    label: "Apollo",
   },
   {
     icon: <img src="/assets/skills/redux.webp" />,
