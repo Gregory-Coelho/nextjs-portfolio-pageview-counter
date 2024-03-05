@@ -11,3 +11,9 @@ export const NEXT = "https://nextjs.org/";
 export const TAILWIND = "https://tailwindcss.com/";
 export const TYPESCRIPT = "https://www.typescriptlang.org/";
 export const CSSSKILLS = "https://developer.mozilla.org/en-US/docs/Web/CSS";
+export const APOLLO = "https://www.apollographql.com/";
+export const HTMLSKILLS = "https://developer.mozilla.org/en-US/docs/Web/HTML";
+export const JAVASCRIPT =
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
+export const NEXTJS = "https://nextjs.org/";
+export const REDUX = "https://redux.js.org/";

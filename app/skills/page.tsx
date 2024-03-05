@@ -3,11 +3,16 @@ import Link from "next/link";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
 import {
+  APOLLO,
   CSSSKILLS,
   CYPRESS,
   GITHUB,
+  HTMLSKILLS,
+  JAVASCRIPT,
   JEST,
+  NEXTJS,
   REACT,
+  REDUX,
   TAILWIND,
   TYPESCRIPT,
 } from "../lib/constants";
@@ -24,6 +29,12 @@ const skills = [
     key: "TypeScript",
     href: TYPESCRIPT,
     label: "TypeScript",
+  },
+  {
+    icon: <img src="/assets/skills/next.svg" />,
+    key: "Next.js",
+    href: NEXTJS,
+    label: "Next.js",
   },
   {
     icon: <img src="/assets/skills/tailwind-css.png" />,
@@ -50,6 +61,30 @@ const skills = [
     label: "Github",
   },
   {
+    icon: <img src="/assets/skills/apollo.svg" />,
+    key: "Apollo",
+    href: APOLLO,
+    label: "Apollo GraphQL",
+  },
+  {
+    icon: <img src="/assets/skills/redux.webp" />,
+    key: "Redux",
+    href: REDUX,
+    label: "Redux",
+  },
+  {
+    icon: <img src="/assets/skills/script-java.png" />,
+    key: "JavaScript",
+    href: JAVASCRIPT,
+    label: "JavaScript",
+  },
+  {
+    icon: <img src="/assets/skills/html.png" />,
+    key: "HTML",
+    href: HTMLSKILLS,
+    label: "HTML",
+  },
+  {
     icon: <img src="/assets/skills/css.png" />,
     key: "CSS",
     href: CSSSKILLS,
@@ -74,7 +109,7 @@ export default function SkillsPage() {
                   href={s.href}
                   className="flex p-4 items-center  gap-16 text-center w-64 mx-4 "
                 >
-                  <span className="bg-white relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500  group-hover:border-zinc-200 drop-shadow-orange">
+                  <span className="bg-white relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500  group-hover:border-zinc-200 drop-shadow-orange overflow-hidden">
                     {s.icon}
                   </span>
                   <h3 className="text-white"> {s.label}</h3>
