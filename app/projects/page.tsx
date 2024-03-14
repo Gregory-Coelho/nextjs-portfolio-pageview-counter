@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { getAllProjects } from "../lib/api";
@@ -31,9 +31,12 @@ export default async function ProjectsPage() {
               <Card key={project.key}>
                 <Link href={project.url}>
                   <div className="block relative w-full h-full min-h-[300px]">
-                    <div
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      layout="fill"
+                      objectFit="contain"
                       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                      style={{ backgroundImage: `url(${project.image})` }}
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity group-hover:bg-opacity-50" />
                     <div className="relative z-10 p-4 md:p-8">
